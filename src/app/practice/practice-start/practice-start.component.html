@@ -1,0 +1,12 @@
+<Page>
+<StackLayout class='start'>
+  <StackLayout orientation="horizontal">
+  <Label class="back-button" text="Back" [nsRouterLink]="['/mode-menu']" pageTransition="slideBottom" clearHistory="true"></Label>
+  </StackLayout>
+<StackLayout class="home-container">
+  <Label [nsRouterLink]="['/practice']" class="go-button" text="Start"></Label>
+  <Label [nsRouterLink]="['/practice']" class="go-button" style='font-size:42；border-top:2;border-top-width:2;border-color: #ff0000;' text="开始"></Label>
+  </StackLayout>
+  <Label class='info' textWrap='true' text="Tap the character that matches the pinyin at the top of the screen. Don't run out of time!"> </Label>
+</StackLayout>
+</Page>

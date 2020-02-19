@@ -1,0 +1,48 @@
+.heading-chinese {
+  border-color: #ff0000;
+  border-width: 0;
+  font-size: 30;
+  font-weight: 900;
+  color: #fff;
+  background-color: #ff0000;
+  text-align: center;
+  border-top: #ff0000;
+  border-top-width: 54;
+}
+
+.heading-english {
+  border-color: #ff0000;
+  border-width: 0;
+  font-size: 42;
+  font-weight: 900;
+  color: #fff;
+  background-color: #ff0000;
+  text-align: center;
+}
+
+
+.home-container {background-color: #ff0000;
+  height: 100%;
+  border-color: #ff0000;
+  border-width: 14;}
+
+.menu-button {
+  background-color: transparent;
+  outline-width: 0.1;
+  border-color: #fff;
+  border-width: 2;
+  border-radius: 7;
+  color: #fff;
+  padding-left: 14px;
+  outline-width: 0;
+}
+
+Button {
+
+}
+
+.coming-soon {
+  border-color: #ff5555;
+  color: #ff5555;
+
+}

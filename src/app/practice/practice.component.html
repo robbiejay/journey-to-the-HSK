@@ -1,0 +1,25 @@
+<Page>
+<StackLayout>
+  <StackLayout orientation="horizontal">
+  <Label class="back-button" text="Back" [nsRouterLink]="['/mode-menu']" pageTransition="slideBottom" clearHistory="true"></Label>
+  <Label class="timer" [text]="timer" [nsRouterLink]="['/hsk-menu']" pageTransition="slideRight" clearHistory="true"></Label>
+  </StackLayout>
+<Label [text]="modelChar" class='model-container'></Label>
+<StackLayout class="home-container">
+<GridLayout columns="24,*,7,*,7,*,24" rows="112,7,112,7,112,*">
+
+  <Button *ngIf="shuffledChars[0] !== ''" [text]="shuffledChars[0]" (tap)="checkAnswer($event, shuffledChars[0], 0)" row='0' col='1' class='answer-container'></Button>
+  <Button *ngIf="shuffledChars[1] !== ''" [text]="shuffledChars[1]" (tap)="checkAnswer($event, shuffledChars[1], 1)" row='0' col='3' class='answer-container'></Button>
+  <Button *ngIf="shuffledChars[2] !== ''" [text]="shuffledChars[2]" (tap)="checkAnswer($event, shuffledChars[2], 2)" row='0' col='5' class='answer-container'></Button>
+
+  <Button *ngIf="shuffledChars[3] !== ''" [text]="shuffledChars[3]" (tap)="checkAnswer($event, shuffledChars[3], 3)" row='2' col='1' class='answer-container'></Button>
+  <Button *ngIf="shuffledChars[4] !== ''" [text]="shuffledChars[4]" (tap)="checkAnswer($event, shuffledChars[4], 4)" row='2' col='3' class='answer-container'></Button>
+  <Button *ngIf="shuffledChars[5] !== ''" [text]="shuffledChars[5]" (tap)="checkAnswer($event, shuffledChars[5], 5)" row='2' col='5' class='answer-container'></Button>
+
+  <Button *ngIf="shuffledChars[6] !== ''" [text]="shuffledChars[6]" (tap)="checkAnswer($event, shuffledChars[6], 6)" row='4' col='1' class='answer-container'></Button>
+  <Button *ngIf="shuffledChars[7] !== ''" [text]="shuffledChars[7]" (tap)="checkAnswer($event, shuffledChars[7], 7)" row='4' col='3' class='answer-container'></Button>
+  <Button *ngIf="shuffledChars[8] !== ''" [text]="shuffledChars[8]" (tap)="checkAnswer($event, shuffledChars[8], 8)" row='4' col='5' class='answer-container'></Button>
+</GridLayout>
+</StackLayout>
+</StackLayout>
+</Page>

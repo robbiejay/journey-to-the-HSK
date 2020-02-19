@@ -1,0 +1,48 @@
+.heading-chinese {
+  border-color: #fff;
+  border-width: 0;
+  font-size: 30;
+  font-weight: 900;
+  color: #0000ff;
+  background-color: #fff;
+  text-align: center;
+  border-top: #fff;
+  border-top-width: 12;
+}
+
+.heading-english {
+  border-color: #fff;
+  border-width: 0;
+  font-size: 42;
+  font-weight: 900;
+  color: #0000ff;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+.home-container {background-color: #fff;
+  height: 100%;
+  border-color: #fff;
+  border-width: 14;}
+
+.menu-button {
+  border-color: #0000ff;
+  border-width: 2;
+  border-radius: 7;
+  color: #0000ff;
+  padding-left: 14px;
+}
+
+.back-button {
+  background-color: #0000ff;
+  color: #000;
+  width: 84;
+  border-radius: 2;
+  padding: 7;
+  color: #fff;
+  margin-left: 10;
+  margin-top: 10;
+  font-size: 14;
+  font-weight: 900;
+}

@@ -1,0 +1,22 @@
+<Page>
+<StackLayout>
+<Label class="heading-chinese" text="汉语水平考试"></Label>
+<Label class="heading-english" text="HSK 1 - 4"></Label>
+
+<StackLayout class="home-container">
+  <GridLayout columns="50, *, 20, *, 50" rows="*,20,*,20,*,20,*,50">
+    <Label [nsRouterLink]="['/hsk-menu']" (tap)="selectHSKLevel(1)" pageTransition="slide" clearHistory="true" text="HSK 1" row="0" col="1" class="menu-button"></Label>
+    <Label [nsRouterLink]="['/hsk-menu']" (tap)="selectHSKLevel(2)" pageTransition="slide" clearHistory="true" text="HSK 2" row="0" col="3" class="menu-button"></Label>
+
+    <Label [nsRouterLink]="['/hsk-menu']" (tap)="selectHSKLevel(3)" pageTransition="slide" clearHistory="true" text="HSK 3" row="2" col="1" class="menu-button"></Label>
+    <Label [nsRouterLink]="['/hsk-menu']" (tap)="selectHSKLevel(4)" pageTransition="slide" clearHistory="true" text="HSK 4" row="2" col="3" class="menu-button"></Label>
+
+    <Label text="HSK 5" row="4" col="1" class="menu-button coming-soon"></Label>
+    <Label text="HSK 6" row="4" col="3" class="menu-button coming-soon"></Label>
+
+    <Label text="Practice" row="6" col="1" colSpan="3" class="menu-button"></Label>
+
+  </GridLayout>
+  </StackLayout>
+</StackLayout>
+</Page>

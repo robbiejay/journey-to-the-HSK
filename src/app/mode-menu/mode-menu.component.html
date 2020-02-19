@@ -1,0 +1,17 @@
+<Page>
+<StackLayout  (swipe)="onSwipe($event)">
+  <StackLayout orientation="horizontal">
+  <Label class="back-button" text="Back" [nsRouterLink]="['/hsk-menu']" pageTransition="slideRight" clearHistory="true"></Label>
+  </StackLayout>
+<Label class="heading-chinese" text="汉语水平考试"></Label>
+<Label class="heading-english" text="HSK 1 - 4"></Label>
+<StackLayout class="home-container">
+  <GridLayout columns="50, *, 20, *, 50" rows="*,20,*,20,*,20,*,50">
+    <Button text="Learn" row="0" col="1" colSpan="3" class="menu-button"></Button>
+    <Button [nsRouterLink]="['/practice-start']" pageTransition="slideTop" clearHistory="true" text="Practice" row="2" col="1" colSpan="3" class="menu-button"></Button>
+    <Button text="Review" row="4" col="1" colSpan="3" class="menu-button"></Button>
+
+  </GridLayout>
+  </StackLayout>
+</StackLayout>
+</Page>

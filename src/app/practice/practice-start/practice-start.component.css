@@ -1,0 +1,41 @@
+.start {
+  background-color: #0000ff;
+}
+
+.home-container {
+  width: 50%;
+  margin-top: 170;
+  text-align: center;
+  border-color: #fff;
+  border-width: 2;
+  border-radius: 2;
+  font-size: 24;
+  color: #fff;
+  background-color: #2222ff;
+  font-weight: 900;
+  margin-bottom: 14;
+}
+
+.go-button {
+
+padding: 12;
+
+}
+
+.info {
+  color: #fff;
+  width: 50%;
+}
+
+.back-button {
+  background-color: #fff;
+  color: #000;
+  width: 84;
+  border-radius: 2;
+  padding: 7;
+  color: #0000ff;
+  margin-left: 10;
+  margin-top: 10;
+  font-size: 14;
+  font-weight: 900;
+}

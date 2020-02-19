@@ -1,0 +1,25 @@
+<Page>
+<StackLayout>
+  <StackLayout orientation="horizontal">
+  <Label class="back-button" text="Back" [nsRouterLink]="['/home']" pageTransition="slideRight" clearHistory="true"></Label>
+  </StackLayout>
+<Label class="heading-chinese" text="汉语水平考试"></Label>
+<Label class="heading-english" [text]="this.hskLevel"></Label>
+
+<StackLayout class="home-container">
+  <GridLayout columns="50, *, 20, *, 50" rows="*,20,*,20,*,20,*,50">
+    <Button [text]="this.menuItems[0][0 + this.menuPage]" (tap)="selectCharacterSet(0 + this.menuPage)" [nsRouterLink]="['/mode-menu']" pageTransition="slide" clearHistory="true" row="0" col="1" class="menu-button"></Button>
+    <Button [text]="this.menuItems[0][1 + this.menuPage]" (tap)="selectCharacterSet(1 + this.menuPage)" [nsRouterLink]="['/mode-menu']" pageTransition="slide" clearHistory="true" row="0" col="3" class="menu-button"></Button>
+    <Label *ngIf='this.menuItems[0][6] && this.menuPage > 0' (tap)="prev()" text='<' row="2" col="0" class='prev-button'></Label>
+    <Button [text]="this.menuItems[0][2 + this.menuPage]" (tap)="selectCharacterSet(2 + this.menuPage)" [nsRouterLink]="['/mode-menu']" pageTransition="slide" clearHistory="true" row="2" col="1" class="menu-button"></Button>
+    <Button [text]="this.menuItems[0][3 + this.menuPage]" (tap)="selectCharacterSet(3 + this.menuPage)" [nsRouterLink]="['/mode-menu']" pageTransition="slide" clearHistory="true" row="2" col="3" class="menu-button"></Button>
+    <Label *ngIf='this.menuItems[0][6] && this.menuPage + 6 < this.menuItems[0].length' (tap)="next()" text='>' row="2" col="4" class='next-button'></Label>
+    <Button [text]="this.menuItems[0][4 + this.menuPage]" (tap)="selectCharacterSet(4 + this.menuPage)" [nsRouterLink]="['/mode-menu']" pageTransition="slide" clearHistory="true" row="4" col="1" class="menu-button"></Button>
+    <Button [text]="this.menuItems[0][5 + this.menuPage]" (tap)="selectCharacterSet(5 + this.menuPage)" [nsRouterLink]="['/mode-menu']" pageTransition="slide" clearHistory="true" row="4" col="3" class="menu-button"></Button>
+
+    <Button text="Practice" row="6" col="1" colSpan="3" class="menu-button"></Button>
+
+  </GridLayout>
+  </StackLayout>
+</StackLayout>
+</Page>
